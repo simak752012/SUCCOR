@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUCCOR - Design Matrix</title>
+    <link rel="icon" type="image/x-icon" href="succore.jpg">
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --accent-color: #28a745;
+            --bg-color: #001122;
+            --card-bg-color: #111111;
+            --text-color: #ffffff;
+            --shadow-blue: 0 4px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: var(--shadow-blue);
+        }
+        /*Logo Section*/
+        .header-logo {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            filter: brightness(1.2);
+        }
+
+        .hero h1 {
+            font-size: 3rem; /* Fixed spacing */
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin: 10px 0;
+        }
+         /*Special Thanks*/
+        .special-thanks {
+            display: block;
+            font-size: 0.9rem;
+            margin-top: 15px;
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        /* Navigation Buttons */
+        .nav-bar {
+            text-align: center;
+            padding: 20px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+         /*Button Section*/
+        .hover-button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #006699;
+            color: white;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            margin: 5px;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .hover-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 102, 153, 0.5);
+            background-color: var(--primary-color);
+        }
+
+        /* Grid Section */
+        .tools-section {
+            padding: 40px 0;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Tool Card Improvements */
+        .tool-card {
+            background-color: var(--card-bg-color);
+            border-radius: 15px;
+            overflow: hidden; /* Important for images */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #222;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 123, 255, 0.4);
+        }
+
+        .card-img-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .card-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps aspect ratio */
+            transition: transform 0.5s ease;
+        }
+
+        .tool-card:hover .card-img-container img {
+            transform: scale(1.1);
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .tool-card h3 {
+            margin: 10px 0;
+            color: var(--primary-color);
+        }
+
+        .tool-card p {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        /* Footer & Contact */
+        .contact-info {
+            text-align: center;
+            padding: 40px 20px;
+            background: #000a14;
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1568270932963-2d73682e243f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGdhcm1lbnQlMjB3ZWJzaXRlJTIwbG9nbyUyMHdpdGglMjBsZXR0ZXIlMjBzfGVufDB8fDB8fHww" alt="company logo" class="header-logo">
+        <h1>SUCCOR</h1>
+        <p>By DESIGN MATRIX</p>
+        <p>Your One-Stop E-Commerce Shop</p>
+        <span class="special-thanks">Special Thanks to - Hafizur Rahman (CEO of DESIGN MATRIX)</span>
+    </div>
+</header>
+
+<div class="nav-bar">
+    <a href="#" class="hover-button">T-Shirt</a>
+    <a href="#" class="hover-button">Shirt</a>
+    <a href="#" class="hover-button">Sweat-Shirt</a>
+    <a href="#" class="hover-button">Trouser</a>
+    <a href="#" class="hover-button">Sports</a>
+    <a href="#" class="hover-button">Jeans</a>
+    <a href="#" class="hover-button">Jacket</a>
+    <a href="#" class="hover-button">Sweater</a>
+    <a href="#" class="hover-button">Winter</a>
+    <a href="#" class="hover-button">About Us</a>
+    <a href="#" class="hover-button">About the Owner</a>
+    <a href="#" class="hover-button">About the Manager</a>
+</div>
+
+<main class="container tools-section">
+    <div class="tools-grid">
+        <a href="#" class="tool-card">
+            <div class="card-img-container">
+                <img src="https://plus.unsplash.com/premium_photo-1661410905014-71d2482d58eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNpbmdsZSUyMHQtc2hpcnR8ZW58MHx8MHx8fDA%3D" alt="T-Shirt">
+            </div>
+            <div class="card-content">
+                <h3>T-Shirt</h3>
+                <p>Choose what's in your mind.</p>
+            </div>
+        </a>
+
+        <a href="#" class="tool-card">
+            <div class="card-img-container">
+                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80&w=500" alt="Shirt">
+            </div>
+            <div class="card-content">
+                <h3>Shirt</h3>
+                <p>Premium quality formal & casual.</p>
+            </div>
+        </a>
+
+        <a href="#" class="tool-card">
+            <div class="card-img-container">
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=500" alt="Sweatshirt">
+            </div>
+            <div class="card-content">
+                <h3>Sweat-Shirt</h3>
+                <p>For the cool spring breeze.</p>
+            </div>
+        </a>
+
+        <a href="#" class="tool-card">
+            <div class="card-img-container">
+                <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&q=80&w=500" alt="Trouser">
+            </div>
+            <div class="card-content">
+                <h3>Trouser</h3>
+                <p>Best comfort in the whole country.</p>
+            </div>
+        </a>
+
+        <a href="#" class="tool-card">
+            <div class="card-img-container">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=500" alt="Sports">
+            </div>
+            <div class="card-content">
+                <h3>Sports Costumes</h3>
+                <p>High performance athletic wear.</p>
+            </div>
+        </a>
+
+        <a href="#" class="tool-card">
+            <div class="card-img-container">
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&q=80&w=500" alt="Jeans">
+            </div>
+            <div class="card-content">
+                <h3>Jeans</h3>
+                <p>Stylish and durable denim wear.</p>
+            </div>
+        </a>
+    </div>
+</main>
+
+<section class="contact-info">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p><strong>Phone (BD):</strong> +8801732989397</p>
+        <h3>Our Office</h3>
+        <p>Bangladesh, Mirpur-D.O.H.S, Dhaka-1216<br>
+        House-832, Road-12, Avenue-04.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 SUCCORE / All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
